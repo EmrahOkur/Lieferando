@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Delivery</title>
+    <head>
+        <link rel="icon" type="image/x-icon" href="./img/favicon_favicon.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="button.css">
+        <script src="script.js"></script>
+        <script src="mobileBasket.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Turkisch Restaurant</title>
+    </head>
+    
+    <body onload="render()">
+        <header>
+            <div class="headerContent">
+                <img src="./img/favicon_liefer.png" alt="logo">
+                <p>Turkish Food Delivery</p>
+                <div>
+                    <img src="./img/favicon_deutsch.png">
+                    <img onclick="showBasket('open')" src="./img/favicon_warenkorb.png">
+                    <div id="deliveryIcon">
+                        <span id="deliveryCount">0</span> 
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div class="contentWrap" id="contentWrap">
+            <section id="content">
+                <div class="backgroundImg">
+                    <div class="restaurantLogo"></div>
+                </div>
+                <div class="padding">
+                    <div class="restaurantDescription">
+                        <div class="data">
+                            <h2>Turkisch Restaurant</h2>
+                            <span><img src="./img/favicon_star.png" ><span><img src="./img/favicon_star.png" ></span><span><img src="./img/favicon_star.png" ><span><img src="./img/favicon_star.png" ><span><img src="./img/favicon_star.png" ></span></span></span><b>4.8</b>(786+)</span>
+                            <span><img src="./img/favicon_standort.png" >Winsener Str.56</span>
+                        </div>
+                        <div class="icons">
+                            <img src="./img/favicon_info.png">
+                            <img src="./img/favicon_like.png">
+                        </div>
+                    </div>
+    
+                    <div id="foodContainer" class="foodContainer">
+                    </div>
+                </div>
+            </section>
+    
+            <section class="basket displayNone" id="basket">
+                <div class="closeBasket">
+                    <img onclick="showBasket('close')" src="./img/favicon_close.png">
+                </div>
+                <div class="basketHeader">
+                    <h3>Warenkorb</h3>
+                    <input id="checkboxToggle" type="checkbox" class="check">
+                </div>
+                <div id="basketDishes"></div>
+                <div id="priceArea"></div>
+            </section>
+        </div>
+    </body>
+    
+    </html>

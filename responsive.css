@@ -1,0 +1,204 @@
+.mobileButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    position: fixed;
+    top: 93%;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    opacity: 80%;
+}
+
+.mobileButton:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.mobileBasket {
+    height: 80vh;
+    width: 80vw;
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    border: 2px solid black;
+    border-radius: 24px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.closeMobileBasket {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding: 12px;
+}
+
+.closeMobileBasket img:hover {
+    cursor: pointer;
+}
+
+
+#content::-webkit-scrollbar {
+    width: 5px;
+}
+
+#content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#content::-webkit-scrollbar-thumb {
+    background: beige;
+    border-radius: 8px;
+}
+
+
+#content::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+.basket::-webkit-scrollbar {
+    width: 5px;
+}
+
+.basket::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.basket::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 8px;
+}
+
+
+.basket::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+@media (max-width: 2160px) {
+    .padding {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .padding {
+        padding: 0 5%;
+    }
+
+    .basket {
+        width: 35%;
+    }
+
+}
+
+@media (max-width: 720px) {
+    .padding {
+        padding: 0 1%;
+    }
+
+    .basket {
+        display: none !important;
+    }
+
+
+    .basketContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        border-radius: 24px;
+        margin: 4px;
+        font-size: 12px;
+        width: 220px;
+        background-color: beige;
+    }
+
+    .closeMobileBasket {
+        padding: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .dishContainer {
+        width: 290px;
+        font-size: 12px;
+    }
+
+    .mobileButton {
+        width: 280px;
+    }
+
+    .padding {
+        padding: 0;
+    }
+
+    .foodContainer {
+        align-items: center;
+    }
+
+    .mobileBasket {
+        height: 500px;
+    }
+
+    .mobileButton {
+        width: 200px;
+    }
+
+    .thxPopUp {
+        top: 40%;
+        left: 50%;
+        background-color: #f39a01;
+        text-align: center;
+    }
+
+    .thxPopUpText {
+        padding: 12px;
+        height: 200px;
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width: 350px) {
+    .dishContainer {
+        width: 270px;
+
+    }
+
+    .dishContainer img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icons img {
+        padding: 0 4px 0 0;
+    }
+
+    .restaurantDescription {
+        font-size: 12px;
+    }
+
+    .foodContainer {
+        padding: 4px;
+        align-items: center;
+    }
+
+    .mobileButton {
+        bottom: 25%;
+        width: 200px;
+    }
+}
